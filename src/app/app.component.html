@@ -2,10 +2,9 @@
   <input type="text" placeholder="Enter Name" name="name" formControlName="user" > <br> 
   <span style="color:red;" *ngIf="user && user.invalid && user.touched">Please Enter Name</span>
   <br> <br>
-  <input type="text" placeholder="Enter pASSWorD" name="password" formControlName="password"> <br> <br> 
+  <input type="text" placeholder="Enter password" name="password" formControlName="password"> <br> <br> 
   <span style="color:red;" *ngIf="password && password.invalid && password.touched">Minimum 5 Characters</span>
   <br>
-  <input type="text" placeholder="Enter number" name="number" formControlName="number"> <br> <br>
   <button [disabled]="loginForm.invalid">Login</button>
 </form>
 

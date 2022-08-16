@@ -12,7 +12,6 @@ export class AppComponent {
   loginForm = new FormGroup({
     user: new FormControl('',[Validators.required,Validators.email]),
     password: new FormControl('',[Validators.required,Validators.minLength(5)]),
-    number: new FormControl(''),
   });
 
   userLogin() {
